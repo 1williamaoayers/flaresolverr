@@ -60,6 +60,7 @@ COPY package.json ../
 
 EXPOSE 8191
 EXPOSE 8192
+EXPOSE 9222
 
 # dumb-init avoids zombie chromium processes
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
