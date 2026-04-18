@@ -138,6 +138,7 @@ def get_webdriver(proxy: dict = None) -> WebDriver:
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--disable-search-engine-choice-screen")
     options.debugger_address = "0.0.0.0:9222"
+    options.add_argument("--remote-debugging-address=0.0.0.0")
     # todo: this param shows a warning in chrome head-full
     options.add_argument("--disable-setuid-sandbox")
     options.add_argument("--disable-dev-shm-usage")
